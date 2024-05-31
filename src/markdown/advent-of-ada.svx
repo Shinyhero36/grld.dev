@@ -1,0 +1,28 @@
+---
+title: 'Advent of Ada'
+summary: 'A month-long celebration of the Ada programming language'
+slug: 'advent-of-ada'
+---
+
+<script lang="ts">
+  import Button from "$lib/components/Button/Button.svelte";
+
+  let counter = 0;
+
+  const increment = () => counter++;
+</script>
+
+## Why Ada is a great language ?
+
+```ada
+with Ada.Text_IO; use Ada.Text_IO;
+
+procedure Hello is
+begin
+   Put_Line ("Hello, world!");
+end Hello;
+```
+
+<Button onclick={increment}>
+  Count: {counter}
+</Button>

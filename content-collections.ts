@@ -3,7 +3,7 @@ import { defineCollection, defineConfig } from '@content-collections/core';
 const posts = defineCollection({
 	name: 'posts',
 	directory: 'src/markdown',
-	include: '**/*.md',
+	include: '**/*.svx',
 	schema: (z) => ({
 		title: z.string(),
 		summary: z.string(),
