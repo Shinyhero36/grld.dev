@@ -31,12 +31,10 @@
 		flex-direction: column;
 		gap: var(--spacing-5xl);
 
-		height: 70vh;
-
-		padding-top: 100px;
+		height: 54vh;
 
 		max-width: 888px;
-		margin: 0 auto;
+		margin: var(--spacing-8xl) auto;
 
 		@media screen and (max-width: 768px) {
 			gap: var(--spacing-3xl);
