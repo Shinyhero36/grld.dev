@@ -1,0 +1,35 @@
+@import url('vars.scss');
+@import url('typography.scss');
+@import url('themes/dark.scss') (prefers-color-scheme: light);
+@import url('themes/dark.scss') (prefers-color-scheme: dark);
+@import url('colors.scss');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--font-heading);
+}
+
+body {
+	background-color: var(--app-bg-subtle);
+	color: var(--text-normal-neutral);
+
+	font-family: var(--font-body);
+
+	max-width: var(--container-max-width);
+	margin: 0 auto;
+	padding: 0 var(--container-padding-mobile);
+
+	@media screen and (min-width: 768px) {
+		padding: 0 var(--container-padding-desktop);
+	}
+}

@@ -1,0 +1,39 @@
+:root {
+	/* Backgrounds */
+	--app-bg-subtle: var(--neutral-1);
+	--app-bg: var(--neutral-2);
+
+	/* Interactive backgrounds */
+	--bg-component-subtle-neutral: var(--neutral-3);
+	--bg-component-normal-neutral: var(--neutral-4);
+	--bg-component-strong-neutral: var(--neutral-5);
+
+	--bg-component-subtle-primary: var(--primary-3);
+	--bg-component-normal-primary: var(--primary-4);
+	--bg-component-strong-primary: var(--primary-5);
+
+	/* Borders and separators */
+	--border-subtle-neutral: var(--neutral-6);
+	--border-normal-neutral: var(--neutral-7);
+	--border-strong-neutral: var(--neutral-8);
+
+	--border-subtle-primary: var(--primary-6);
+	--border-normal-primary: var(--primary-7);
+	--border-strong-primary: var(--primary-8);
+
+	/* Solid colors */
+	--solid-normal-neutral: var(--neutral-9);
+	--solid-strong-neutral: var(--neutral-10);
+
+	--solid-normal-primary: var(--primary-9);
+	--solid-strong-primary: var(--primary-10);
+
+	/* Text colors */
+	--text-subtle-neutral: var(--neutral-11);
+	--text-normal-neutral: var(--neutral-12);
+
+	--text-subtle-primary: var(--primary-11);
+	--text-normal-primary: var(--primary-12);
+
+	--text-inverted: white;
+}
