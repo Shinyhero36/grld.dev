@@ -2,3 +2,64 @@
 	--font-body: 'Outfit', sans-serif;
 	--font-heading: 'Bevellier', sans-serif;
 }
+
+.really-big-title {
+	font-size: 150px;
+	line-height: 140px;
+	font-weight: bold;
+
+	@media screen and (max-width: 768px) {
+		font-size: 100px;
+		line-height: 100px;
+	}
+
+	@media screen and (max-width: 480px) {
+		font-size: 50px;
+		line-height: 50px;
+	}
+}
+
+.text-xl {
+	font-size: 36px;
+	line-height: 48px;
+
+	@media screen and (max-width: 768px) {
+		font-size: 30px;
+		line-height: 40px;
+	}
+}
+
+.text-lg {
+	font-size: 24px;
+	line-height: 36px;
+
+	@media screen and (max-width: 768px) {
+		font-size: 20px;
+		line-height: 30px;
+	}
+}
+
+.text-md {
+	font-size: 18px;
+	line-height: 24px;
+
+	@media screen and (max-width: 768px) {
+		font-size: 16px;
+		line-height: 22px;
+	}
+}
+
+.text-sm {
+	font-size: 14px;
+	line-height: 20px;
+
+	@media screen and (max-width: 768px) {
+		font-size: 12px;
+		line-height: 18px;
+	}
+}
+
+.text-xs {
+	font-size: 12px;
+	line-height: 18px;
+}
