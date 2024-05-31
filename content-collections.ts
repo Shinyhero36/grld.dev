@@ -1,16 +1,17 @@
 import { defineCollection, defineConfig } from '@content-collections/core';
 
-const projects = defineCollection({
-	name: 'projects',
-	directory: 'src/content/projects',
+const posts = defineCollection({
+	name: 'posts',
+	directory: 'src/markdown',
 	include: '**/*.md',
 	schema: (z) => ({
 		title: z.string(),
-		description: z.string(),
-		slug: z.string()
+		summary: z.string(),
+		slug: z.string(),
+		commingSoon: z.boolean().default(false)
 	})
 });
 
 export default defineConfig({
-	collections: [projects]
+	collections: [posts]
 });

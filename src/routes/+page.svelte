@@ -1,28 +1,16 @@
 <script>
+	import { allPosts } from 'content-collections';
+
 	import Footer from '$lib/components/Footer.svelte';
 	import Hero from '$lib/components/Hero.svelte';
 	import ProjectCard from '$lib/components/ProjectCard.svelte';
-
-	const projects = [
-		{
-			title: 'What The Hex ?!',
-			description: 'A wordle-like game but instead of words, it’s hex colors.',
-			slug: 'what-the-hex'
-		},
-		{
-			title: 'Svote',
-			description:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
-			slug: 'svote'
-		}
-	];
 </script>
 
 <Hero />
 
 <div class="projects">
-	{#each projects as project}
-		<ProjectCard {...project}>
+	{#each allPosts as project}
+		<ProjectCard title={project.title} description={project.summary} slug={project.slug}>
 			<div style="height: 150px;"></div>
 		</ProjectCard>
 	{/each}
@@ -44,8 +32,22 @@
 		:global(> :nth-child(1)) {
 			grid-column: auto / span 2;
 		}
+
 		:global(> :nth-child(2)) {
 			grid-column: auto / span 3;
+		}
+
+		:global(> :nth-child(3)) {
+			grid-column: auto / span 3;
+			grid-row: auto / span 2;
+		}
+
+		:global(> :nth-child(4)) {
+			grid-column: auto / span 2;
+		}
+
+		:global(> :nth-child(5)) {
+			grid-column: auto / span 2;
 		}
 	}
 </style>
