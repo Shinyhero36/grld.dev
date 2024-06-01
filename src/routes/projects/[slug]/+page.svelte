@@ -4,8 +4,5 @@
 </script>
 
 {#if project}
-	<h1>{project.title}</h1>
-	<p>{project.summary}</p>
-
 	<svelte:component this={markdown} />
 {/if}

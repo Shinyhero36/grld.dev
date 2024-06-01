@@ -7,9 +7,16 @@ const posts = defineCollection({
 	schema: (z) => ({
 		title: z.string(),
 		summary: z.string(),
-		slug: z.string(),
-		commingSoon: z.boolean().default(false)
-	})
+		slug: z.string()
+	}),
+	transform: (data) => ({
+		...data,
+		slug: data.slug.toLowerCase()
+	}),
+	onSuccess: (documents) => {
+		console.log(`Successfully loaded ${documents.length} posts`);
+		console.table(documents.map((doc) => ({ title: doc.title, slug: doc.slug })));
+	}
 });
 
 export default defineConfig({
