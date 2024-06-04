@@ -15,7 +15,6 @@ const posts = defineCollection({
 	}),
 	onSuccess: (documents) => {
 		console.log(`Successfully loaded ${documents.length} posts`);
-		console.table(documents.map((doc) => ({ title: doc.title, slug: doc.slug })));
 	}
 });
 
