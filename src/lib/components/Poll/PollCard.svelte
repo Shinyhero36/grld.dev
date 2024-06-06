@@ -48,6 +48,8 @@
 		border-radius: var(--rounded-2xl);
 
 		padding: var(--spacing-lg);
+
+		color: black;
 	}
 
 	:global(.poll-card.green) {

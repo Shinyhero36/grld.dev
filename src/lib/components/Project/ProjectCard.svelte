@@ -48,4 +48,8 @@
 		padding: var(--spacing-3xl);
 		z-index: 10;
 	}
+
+	.project-card > .info > p {
+		color: var(--text-subtle-neutral);
+	}
 </style>
