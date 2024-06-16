@@ -41,7 +41,7 @@
 	}
 	:global(.project-card:hover > .preview > .poll2) {
 		transition: transform 150ms ease-in;
-		transform: translate(calc(10% + 45px), calc(25% + 75px)) rotate(-2.5deg);
+		transform: translate(calc(10% + 45px), calc(25% + 95px)) rotate(-2.5deg);
 	}
 
 	.project-card > .info {

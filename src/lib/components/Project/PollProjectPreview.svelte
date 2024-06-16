@@ -42,7 +42,7 @@
 
 	.poll2 {
 		position: absolute;
-		transform: translate(calc(10% + 25px), calc(25% + 65px)) rotate(-5deg);
+		transform: translate(calc(10% + 25px), calc(25% + 75px)) rotate(-5deg);
 		max-width: 300px;
 		width: 100%;
 	}

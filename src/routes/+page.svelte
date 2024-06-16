@@ -26,9 +26,9 @@
 		display: grid;
 		grid-auto-rows: minmax(0, 1fr);
 		grid-template-columns: repeat(3, minmax(auto, 1fr));
-		grid-auto-rows: calc(var(--spacing-11xl) * 2);
+		grid-auto-rows: 360px;
 
-		max-width: 1200px;
+		max-width: 1100px;
 		margin: var(--spacing-4xl) auto;
 
 		gap: var(--spacing-3xl);
