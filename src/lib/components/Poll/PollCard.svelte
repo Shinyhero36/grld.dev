@@ -22,7 +22,7 @@
 
 <div class="poll-card {variant}">
 	<div class="author text-sm">
-		<img src="https://api.dicebear.com/8.x/micah/svg?seed={poll.author}" alt="Avatar" />
+		<img src="https://api.dicebear.com/8.x/fun-emoji/svg?seed={poll.author}" alt="Avatar" />
 		<span>{poll.author}</span>
 	</div>
 	<p class="question">{poll.question}</p>
