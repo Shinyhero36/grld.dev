@@ -10,6 +10,11 @@
 	box-sizing: border-box;
 }
 
+::selection {
+	background-color: var(--text-normal-neutral);
+	color: var(--bg-component-normal-neutral);
+}
+
 h1,
 h2,
 h3,
